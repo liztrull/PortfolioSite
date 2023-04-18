@@ -17,8 +17,7 @@ svg{
 .navbar{
   position: sticky;
   width: 100%;
-  top:0;
-  left:165px;
+  top:0px;
   font-weight: 600;
   font-size:x-large;
 }
@@ -58,6 +57,25 @@ nav li a:hover {
   color: rgb(255, 255, 255);
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 0px;
+  margin: 0px;
+  grid-template-rows: 300px 150px;
+}
+
+.grid-item {
+  font-size: 25px;
+  text-align: center;
+  transform: scale(1.5);
+}
+
+.grid-item{ 
+  transform: scale(1);
+  color: #91739e;
+  height: 300px;
+}
 
 /* IMAGE GALLERY CSS */
 .image-gallery {
@@ -138,17 +156,19 @@ footer{
 }
 
 .icon svg {
-  width:70%;
+  width:50%;
 }
 
-
+.box-styling {
+  
+}
 
 
 
 /* footer */
 
 
-
+/* mobile */
 
 @media (max-width:735px){
   nav {
@@ -199,51 +219,3 @@ footer{
     width: 70%;
     margin: 10%}
 }
-
-/* desktop grid */
-@media only screen and (min-width: 1200px) {
- 
-  /* .container{
-    min-width:100%;
-    height:100vh;
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-          "nav"
-          "parent-landing"
-          "portfolio-container"
-          "footer";} */
-
-          .portfolio-container {
-            display: grid;
-            background-color: #B46060;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto;
-            grid-gap: 3%;
-            grid-template-areas:
-              ".a. .b."
-              ".c. .d."
-              ".e. .f.";
-          }
-
-          .parent-landing {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(0, 1fr);
-            align-items: center;
-            justify-content: center;
-            ;
-            }
-            
-            .name-type { grid-area: 1 / 1 / 2 / 2; 
-              scale: 120%;
-              margin: 10%}
-            .land-type { grid-area: 1 / 2 / 2 / 3;
-              width: 70%;
-              margin: 10%}
-          
-          }
